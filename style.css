@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+     color: white;
+}
+
+.position{
+    position:sticky;
+    top:0;
+    background-color:rgb(121, 26, 80);
+    padding: 20px;
+    z-index: 1;
+}
+nav h4{
+    color: rgb(104, 236, 104);
+    font-size: 25px;
+}
+
+nav h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a{
+    color: rgb(104, 236, 104);
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+.list-item{
+    cursor: pointer;
+    position: relative;
+}
+
+.list-item::after{
+    content:" ";
+    position: absolute;
+    bottom:0;
+    left:-3px;
+    width:80%;
+    background-color:  rgb(104, 236, 104);
+    height:2px;
+    transform-origin: bottom left bottom right;
+    transition: transform 0.5s ease;
+}
+
+.list-item::after{
+    transform: scaleX(0);
+}
+.list-item:hover::after{
+    transform: scaleX(1);
+}
+
+
+/* /////////////////////////// ABout   ME //////////////////////////////// */
+
+
+.center a{
+    text-decoration: none;
+    color: white;
+}
+
+.animation{
+    position: relative;
+    top:90px;
+    font-size: 30px;
+    left: 30%;
+}
+
+.animation::after{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform-origin: bottom left bottom right;
+    transition: transform 0.35s ease-out;
+}
+
+.animation::after{
+    transform: scaleX(0);
+}
+
+.animation:hover::after{
+    transform: scaleX(1);
+}
+
+.inner-section{
+    display: flex;
+    margin-top: 15%;
+    justify-content: space-around;
+}
+
+
+.left-section{
+    width: 40%;
+    margin-left:10%;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.left-section p{
+    padding-top: 10px;
+    color:rgb(202, 98, 116);
+}
+
+.sub-para{
+    font-size:20px;
+}
+
+.resume{
+    position: relative;
+    top: 20%;
+    right:70%;
+}
+
+.left-section h3{
+    font-size: 40px;
+}
+.left-section a{
+    display: inline-block;
+    margin-top:15px;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s ease-out;
+}
+
+.left-section a:hover{
+    background-color:red;
+}
+
+
+/* ////////////////////// section-2 //////////////////////////////// */
+
+
+.list{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.right-section-2 p{
+    font-weight: bold;
+    color: black;
+    text-align: left;
+}
+
+
+/* /////////////////////////////////////// section-3 Project    //////////////////////////////////// */
+
+.inner-links{
+    display: inline-block;
+    position: relative;
+
+}
+
+.inner-links::after{
+    content: " ";
+    position: absolute;
+    height: 3px;
+    background-color: red;
+    width:80%;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom left bottom right;
+    transition: transform 0.7s ease;
+}
+
+.inner-links::after{
+    transform: scaleX(0);
+}
+
+.inner-links:hover::after{
+    transform: scaleX(1);
+}
+
+/* //////////// right card /////////// */
+
+
+.right-card{
+    width:30%;
+    background-color:white;
+    border-radius: 10px;
+    height:270px;
+    color: black;
+}
+
+.right-card h3{
+    text-align: center;
+    margin-top:5px;
+    margin-bottom: 10px;
+}
+
+.right-card p{
+    text-align: center;
+}
+.right-card img{
+    position: relative;
+    padding-left:40px;
+    padding-top: 10px;
+}
+
+.card{
+   transition: all 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 5px 5px 5px grey;
+}
+
+@keyframes mymove{
+    0%{
+        background-color: orange;
+        
+    }
+    50%{
+        background-color: white;
+        color: black;
+    }
+    100%{
+        background-color: green;
+    }
+}
+
+
+/* ///////////////////////////  Section-4     ///////////////////////////////// */
+
+
+.section-4{
+    height:750px;
+}
+
+.section-4 span{
+    text-align: center;
+    margin-top:20px;
+    display: block;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.section-4 a{
+    color: red;
+    text-decoration: none;
+    position: relative;
+    bottom: 20px;
+}
+.last-anchor{ 
+    margin-top:40px;
+}
+
+.section-4 p{
+    padding:10px;
+}

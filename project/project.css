@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+}
+.position {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgb(121, 26, 80);
+  padding: 20px;
+  z-index: 1;
+}
+.list {
+  text-align: center;
+  padding-top: 20px;
+}
+.list-items {
+  padding-right: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.list-items::after {
+  content: " ";
+  position: absolute;
+  bottom: -2px;
+  left: -3px;
+  width: 70%;
+  background-color: rgb(104, 236, 104);
+  height: 2px;
+  transform-origin: bottom left bottom right;
+  transition: transform 0.5s ease;
+}
+
+.list-items::after {
+  transform: scaleX(0);
+}
+.list-items:hover::after {
+  transform: scaleX(1);
+}
+
+/* ///////////////////////// animation /////////////// */
+.animate {
+  animation: colorchange 3s infinite ease-in-out;
+}
+
+@keyframes colorchange {
+  0% {
+    background: linear-gradient(to right, orange, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  50% {
+    background: linear-gradient(to right, red, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  100% {
+    background: linear-gradient(to right, green, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+/* .section-3 {
+  height:650px;
+  margin-top: 10%;
+} */
+/* .section-3 span {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+  word-spacing: 10px;
+  text-transform: uppercase;
+} */
+
+
+.inner-links {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.inner-links::after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: red;
+  width: 80%;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom left bottom right;
+  transition: transform 0.7s ease;
+}
+
+.inner-links::after {
+  transform: scaleX(0);
+}
+
+.inner-links:hover::after {
+  transform: scaleX(1);
+}
+
+.card {
+  transition: all 0.7s ease;
+}
+.card:hover {
+  transform: scale(1.2, 1.2);
+  box-shadow: 5px 5px 5px grey;
+}

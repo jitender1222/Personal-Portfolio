@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              yellow:'rgb(104, 236, 104)',
+              red:'#B4161B',
+              pink:' rgb(121, 26, 80)',
+            }
+          }
+        }
+      }
+    </script>
+    <title>Portfolio</title>
+  </head>
+ 
+  <body class="">
+    <nav class="position">
+      <h4 class="hidden sm:block relative top-8">PORTFOLIO</h4>
+      <div class="text-yellow flex list-none justify-center md:justify-end">
+        <a class="list-item" href="#" target="_blank" rel="noopener noreferrer">Home</a>
+        <a class="list-item" href="#about" rel="noopener noreferrer">About</a>
+        <a class="list-item" href="#projects"  rel="noopener noreferrer">Projects</a>
+        <a class="list-item" href="#blogs" rel="noopener noreferrer">Blogs</a>
+      </div>
+    </nav>
+
+    <!-- ****************Section -1 ********************************  -->
+
+    <div class="">
+      <div class="flex flex-col md:flex-row p-5">
+        <div class="flex text-center flex-col md:w-1/2 pt-10 xl:mx-auto text-center">
+          <div class="mx-auto w-1/2 md:hidden">
+            <img src="./images/WhatsApp_Image_2022-08-07_at_11.23.56_PM-removebg-preview.png" class="rounded-full" alt="img">
+          </div>
+          <p class="font-bold text-yellow font-bold xl:text-2xl">HELLO THERE</p>
+          <h3 class="font-bold md:text-2xl xl:text-4xl">I am Jitender Singh</h3>
+          <span class="text-yellow font-semibold w-1/2  mx-auto xl:text-2xl" >I design and code beautifull simple things
+            <br class="hidden lg:block"> and i love what i do</span>
+          <a href="./JitenderPB.pdf" class="download border w-32 text-center mt-5 bg-pink hover:bg-red mx-auto" target="_blank" rel="noopener noreferrer">View Resume</a>
+        </div>
+        <div class="md:ml-20">
+          <img src="./images/WhatsApp_Image_2022-08-07_at_11.23.56_PM-removebg-preview.png" class="hidden md:block w-1/2 rounded-full" alt="img">
+        </div>
+      </div>
+    </div>
+
+    <!-- ABout -->
+
+      <div class="bg-gray-300 text-black text-center overflow-hidden" id="about">
+      <div class="pt-10"> 
+      <p class="font-bold text-pink">ABOUT</p>
+      <h4 class="text-2xl font-semibold">Personal Info</h4>
+      <span class="text-pink font-semibold text-xl">Get to know more about me</span>
+      </div>
+      <div class=" flex flex-col sm:flex-row justify-center mt-20">
+        <div class="sm:w-[40%] p-2">
+          <span class="font-bold mr-96 text-2xl text-pink">Hello!</span>
+          <p class="sm:font-semibold mt-3 text-xl">
+            My name is Jitender Singh i am from delhi i recently completed by B.tech
+            in computer science.I have a passion for all things technology and design, from software engineering to UI/UX.
+            I like to code things from scratch, and enjoy bringing ideas to life in the browser.
+          </p>
+        </div>
+        <div class="sm:w-1/2 font-semibold">
+            <p class="text-center text-2xl">Skills</p>
+            <ul class="flex space-x-2 flex-wrap justify-center">
+                <li class="bg-gray-200 m-2 p-2">HTML</li>
+                <li class="bg-gray-200 m-2 p-2">CSS</li>
+                <li class="bg-gray-200 m-2 p-2">JAVASCRIPT</li>
+                <li class="bg-gray-200 m-2 p-2">Tailwind Css</li>
+                <li class="bg-gray-200 m-2 p-2">BootStrap</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+
+    <div class="p-10 text-center" id="projects">
+        <span class="text-center p-10 text-4xl font-bold">Projects</span>
+         <div class="flex space-y-2 flex-col sm:flex-row justify-center mt-20 space-x-8">
+
+           <div class="bg-white text-black ml-5 card md:w-[42%] lg:w-[25%] rounded-md text-center">
+              <div class="mt-5">
+                <img src="./thumbnail.png" alt="img">
+              </div>
+                <h3 class="font-semibold mt-3 md:mt-12 lg:mt-16 xl:mt-20">Street View</h3>
+                <p class="font-md">This is a landing page and i made this by using html and css </p>
+                <div class="flex flex-row justify-center p-5">
+                <a href="https://github.com/jitender1222/Project-1-js-bootcamp" class="inner-links text-black" target="_blank" >Git Hub</a>
+                <a href="https://whats-trend-in-2025.netlify.app/" target="_blank" class="inner-links text-black">Live-Link</a>
+              </div>
+            </div>
+            <div class="bg-white card text-black md:w-[42%] lg:w-[25%] rounded-md text-center">
+              <div class="mt-5">
+                <img src="../images/2.png" alt="img">
+              </div>
+                <h3 class="font-semibold mt-3">Delicious Food</h3>
+                <p class="font-md">This is a landing page of Restaurant which i made by using  html and css </p>
+                <div class="flex flex-row justify-center p-5 ">
+                <a href="https://github.com/jitender1222/Project-1-js-bootcamp" class="inner-links text-black" target="_blank" >Git Hub</a>
+                <a href="https://whats-trend-in-2025.netlify.app/" target="_blank" class="inner-links text-black">Live-Link</a>
+              </div>
+            </div> 
+        </div>
+
+        <!-- More projects -->
+
+        <div class="mt-10 bg-pink w-40 mx-auto text-white rounded-full text-center hover:bg-yellow hover:text-black">
+        <a href="./project/project.html" target="_blank" class="" rel="noopener noreferrer">More Projects</a>
+      </div>
+    </div>
+
+    <!-- Blogs -->
+
+   <div class="bg-black pt-20 overflow-hidden" id="blogs">
+      <span class="text-center text-2xl font-bold block">Blogs</span>
+        <div class="flex flex-wrap flex-col md:flex-row mt-10 mx-auto justify-center space-x-6 space-y-6 p-10 rounded-xl lg:w-[60%] xl:w-1/2">
+
+          <div class="hidden left-card md:w-[40%] bg-gray-200 text-black rounded-xl">
+            <div class="h-[150px] border-4">
+              <img src="./images/git-github.png" width="250px" class="" alt="img">
+            </div>
+              <p class="">In this article i talk about all the neccessary commands which is required by a beginner to start git and git hub</p>
+              <a href="https://webdeveloper2212.hashnode.dev/learn-the-basics-of-git-and-git-hub" target="_blank" class="inner-links">Read More</a>
+          </div>
+            <div class="left-card md:w-[40%] bg-gray-200 text-black rounded-xl text-center card p-5">
+              <div class="h-[150px]">
+                <img src="./images/git-github.png" width="250px" class="" alt="img">
+              </div>
+                <p class="">In this article i talk about all the neccessary commands which is required by a beginner to start git and git hub</p>
+                <a href="https://webdeveloper2212.hashnode.dev/learn-the-basics-of-git-and-git-hub" target="_blank" class="inner-links font-bold text-pink">Read More</a>
+            </div>
+            <div class="left-card md:w-[40%]  bg-gray-200 text-black rounded-xl text-center card p-5">
+              <div class="h-[150px]">
+              <img src="./images/css-position.png" width="250px" alt="img">
+              </div>
+              <p>This article talks about each and everything about css positioning from the start and also talks about Z-index</p>
+              <a href="https://webdeveloper2212.hashnode.dev/everything-you-need-to-know-about-css-positioning" target="_blank" class=" text-pink font-bold inner-links">Read More</a>
+          </div>
+          <div class="left-card  md:w-[40%] bg-gray-200 text-black rounded-xl text-center card p-5">
+            <div class="h-[150px]">
+            <img src="./images/markdown.png" width="250px" alt="img">
+            </div>
+            <p>This article contains all the things which is required by a beginner before writing any markdown </p>
+            <a href="https://webdeveloper2212.hashnode.dev/markdown-a-complete-guide-for-beginners" target="_blank" class="inner-links text-pink font-bold ">Read More</a>
+        </div>
+        <div class="left-card md:w-[40%]  bg-gray-200 text-black rounded-xl text-center card p-5">
+          <div class="h-[150px]">
+          <img src="./images/css-rules.png" width="250px" alt="img">
+          </div>
+          <p>In this article i talk about all the css selector and how to use it which is very useful for beginners.</p>
+          <a  href="https://webdeveloper2212.hashnode.dev/all-about-css-selector" target="_blank" class="inner-links text-pink font-bold ">Read More</a>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
